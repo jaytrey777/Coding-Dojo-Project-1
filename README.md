@@ -1,1 +1,1 @@
-# Coding-Dojo-Project-1
+# Project-1
