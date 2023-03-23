@@ -18,4 +18,7 @@
 #### Histograms
 #### Boxplots
 #### Heat Map
+## Project - Part 4
 ### Explanatory Visuals
+#### Bar Graphs
+#### Scatter Plots
