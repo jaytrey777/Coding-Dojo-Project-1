@@ -22,8 +22,8 @@ For this dataset, there were 8523 rows and 12 columns.
 ## To prepare this data, the data was cleaned, and the following processes were performed:
 
 ### Exploratory Data Analysis
-    - During the exploratory data analysis, histograms and boxplots were visualized for relevant numeric and 
-      categorical datatype columns. 
+    - During the exploratory data analysis, histograms and boxplots were visualized for relevant 
+      numerical and categorical datatype columns. 
     - Also, a heat map was used to show the correlations between the data. 
     - This gave a good baseline for all of the numeric and categorical columns for univariate data.
     
