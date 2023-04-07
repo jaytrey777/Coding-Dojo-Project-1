@@ -86,11 +86,26 @@ This Bar Graph shows that the store that was established in 1985 is Tier 3 and h
 
 ### Models Evaluated & Results
 <p align = "center"> 
-<img width="670" alt="image" src="https://user-images.githubusercontent.com/20051049/230517239-3536cc8e-611d-4726-828e-d858dcc75b26.png">
+<img width="878" alt="image" src="https://user-images.githubusercontent.com/20051049/230536078-df4f749b-ee00-4754-a58d-bff0d41a4499.png">
 </p> 
 
-- The Final Untuned Model Chosen was a `Bagged Tree Regressor Model` .
+- The Final Untuned Model Chosen was a `Random Forest Regressor Model` .
 - For the testing set on the model, `56.04%` of the variance in y was explained by x. 
 - The Mean Absolute Error was off by about `$765.43`.
-- The Mean Squared Error was `$2,044,264,641.83`.
-- The Root Mean Squared Error had a calculation of `$1101.29`
+- The Mean Squared Error was `$1,212,852.26`.
+- The Root Mean Squared Error had a calculation of `$1101.30`
+ 
+Based on these current model metrics, I would use the Random Forest Model. It has the second best R-Squared and Root Mean Squared Error values but has the lowest Mean Absolute Error and Mean Squared Error values. The R Squared and RMSE values are only second by a small margin. The Random Forest Model will not be able to account 0.09% of variance as the Linear Regression Model, but will give you predictions that are $46.26 tigher to actual values on average.
+
+### Tuned Model & Results
+<p align = "center"> 
+<img src ="https://user-images.githubusercontent.com/20051049/230536460-bf7004f6-dccd-4539-96c4-395f5769fb4c.png">
+</p> 
+
+- Based on these tuned model metrics, the Tuned Random Forest Model has the best metrics in all the Testing categories when using 140 estimators and a Max depth of 5.
+- The Tuned Random Forest Model will be able to account for 60.31% of variance in y as explained by x.
+- The Mean Average Error was off by about $728.24
+- The Mean Squared Error was $1,095,017.80
+- The Root Mean Squared Error had a calculation of $1046.43
+
+Using this model to make predictions about the sales for different grocery stores would not be very reliable. Considering the metrics from how the model performed, the model is underfit to the data. The model performed similarly on the training data and testing data, suggesting a bias with respect to the R-Squared values being around 60% for both the testing and training. There may be different models out there that will perform better to this data set.
